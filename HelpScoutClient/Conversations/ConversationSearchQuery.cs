@@ -34,7 +34,7 @@ namespace HelpScout.Conversations
 
             if (AssignedTo.HasValue()) col.Add("assigned_to", AssignedTo);
 
-            if (ModifiedSince != null) col.Add("modifiedSince", ModifiedSince.ToString());
+            if (ModifiedSince != null) col.Add("modifiedSince", ((DateTime)ModifiedSince).ToString("yyyy-MM-dd'T'HH:mm:ss'Z'"));
 
             if (Number.HasValue()) col.Add("number", Number);
 
